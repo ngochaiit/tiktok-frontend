@@ -31,7 +31,7 @@ const brandWarning = getStyle('--warning')
 const brandDanger = getStyle('--danger')
 
 
-class Dashboard extends Component {
+class WatchingVideo extends Component {
   constructor(props) {
     super(props);
 
@@ -58,12 +58,17 @@ class Dashboard extends Component {
 
   loading = () => <div className="animated fadeIn pt-1 text-center">Loading...</div>
 
+
   render() {
 
     return (
-      <div className="animated fadeIn">
-        <Row>
-          <Col xs="12" sm="6" lg="3">
+      <div className="">
+        <Row style = {{background: 'white'}}>
+            <Col  lg="8">
+              <h1>Video</h1>
+            </Col>
+            <Col  lg="4">
+              <h2>dm video</h2>
 
           </Col>
         </Row>
@@ -72,4 +77,4 @@ class Dashboard extends Component {
   }
 }
 
-export default Dashboard;
+export default WatchingVideo;
